@@ -1,0 +1,28 @@
+
+# The version that you need to run with specific features it supports
+version: '3'
+
+# The next thing we're going to do is specify all the containers that you need
+# YAML file spacing matters, so make sure to be consistent
+services:
+# Here we are creating the first container. Please enter the container name below:
+ node-app:
+# Add the container configuration below hite one tap after the nameof container
+# here we are buildin the image so you dont have goona do it any more 
+  build: .
+#we do - value if we have a list 
+  ports:
+   - "3333:3000"
+  volumes:
+   - ./:/app:ro
+   - /app/node_modules
+  environment:
+   - PORT=3000
+# env_file:
+#  - ./.env
+
+   
+
+ 
+ 
+
