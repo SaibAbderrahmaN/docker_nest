@@ -8,3 +8,10 @@ services:
    - PORT=3000
 # env_file:
 #  - ./.env
+ escrawme-db:
+   image: mongo
+   environment:
+    - MONGO_INITDB_ROOT_USERNAME:abderrahmane
+    - MONGO_INITDB_ROOT_PASSWORD:localhost5000
+
+  

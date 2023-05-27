@@ -115,6 +115,7 @@ to run this use docker-compose up
 ---------------///////////////////////////  manage your docker commpse see file in github to understand 
 
 dcoker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up  -d --build
 
 
 
