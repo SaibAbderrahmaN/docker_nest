@@ -11,7 +11,13 @@ services:
  escrawme-db:
    image: mongo
    environment:
-    - MONGO_INITDB_ROOT_USERNAME:abderrahmane
-    - MONGO_INITDB_ROOT_PASSWORD:localhost5000
+    - MONGO_INITDB_ROOT_USERNAME=abderrahman
+    - MONGO_INITDB_ROOT_PASSWORD=localhost
+   volumes:
+    - mongo-db:/data/db
+
+volumes:
+ mongo-db:
+ 
 
   
