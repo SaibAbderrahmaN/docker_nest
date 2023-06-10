@@ -128,6 +128,9 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up  -d --build
 
 docker inspect network 
 
+//////////////////////////////////////////////////
+ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --no-deps node-app
+
 
 
 
